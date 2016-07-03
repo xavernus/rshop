@@ -1,8 +1,18 @@
 <html>
     <head>
+        {% load i18n future staticfiles %}
         <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
     </head>
     <body>
+        <header class="page-header">
+            {% if request.user.is_authenticated %}
+                <a href="{% url 'signout' %}">Выйти</a>
+            {% else %}
+                <a href="{% url 'signup' %}">Регистрация</a>
+                <a href="{% url 'signin' %}">Войти</a>
+            {% endif %}
+        </header>
         {% block content %}{% endblock %}
     </body>
 </html>

@@ -1,0 +1,4 @@
+body { padding-top: 60px; }
+body a { color: inherit; }
+
+.page-header { background-color: black; box-sizing: border-box; color: white; height: 40px; left: 0px; line-height: 40px; padding: 0px 20px; position: fixed; text-align: right; top: 0px; width: 100%; }
