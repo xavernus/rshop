@@ -123,3 +123,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOGIN_URL = '/signin/'
+
+MEDIA_ROOT = os.path.join(os.path.dirname(__file__), 'media')
+MEDIA_URL = '/media/'
+
+PRODUCTS_PER_PAGE = 8

@@ -1,4 +1,17 @@
-body { padding-top: 60px; }
+html, body { font-family: Roboto; }
+body { margin: 0px; padding-top: 60px; }
 body a { color: inherit; }
 
+.clearfix { clear: both; }
+
 .page-header { background-color: black; box-sizing: border-box; color: white; height: 40px; left: 0px; line-height: 40px; padding: 0px 20px; position: fixed; text-align: right; top: 0px; width: 100%; }
+
+.pagination { margin: 20px; text-align: center; }
+.pagination a { background-color: black; color: white; padding: 5px; text-decoration: none; }
+
+.product { float: left; height: 35vw; width: 25%; margin-bottom: 40px; }
+.product:hover { box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 10; }
+.product-name { display: block; font-weight: 500; margin: 5px 0px; text-align: center; text-decoration: none; text-transform: uppercase; }
+.product-image { width: 100%; }
+.product-price { margin: 10px 0px; text-align: center; }
+.product-cart-button { background: green; border: none; color: white; cursor: pointer; display: block; margin: 0px auto; padding: 10px; text-transform: uppercase; }
